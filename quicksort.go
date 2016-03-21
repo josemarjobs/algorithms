@@ -14,7 +14,6 @@ func main() {
 	}
 
 	fmt.Println(numbers)
-
 }
 
 func sort(numbers []int, left, right int) {
