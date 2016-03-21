@@ -1,14 +1,14 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"os"
 )
 
 func gcd(a, b int) (best int) {
 	// just to be safe
 	if a > 10000000 || b > 10000000 {
-		log.Println("Numbers too big")
+		fmt.Println("Numbers too big")
 		os.Exit(1)
 	}
 
@@ -21,6 +21,6 @@ func gcd(a, b int) (best int) {
 }
 
 func main() {
-	log.Println(gcd(100, 4))
-	log.Println(gcd(134352, 41223))
+	fmt.Println(gcd(100, 4))
+	fmt.Println(gcd(134352, 41223))
 }

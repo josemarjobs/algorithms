@@ -1,14 +1,14 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"os"
 )
 
 // do not run this on numbers bigger the 60
 func fib(n int) int {
 	if n > 50 {
-		log.Println("Number too big")
+		fmt.Println("Number too big")
 		os.Exit(1)
 	}
 	if n <= 1 {
@@ -19,10 +19,11 @@ func fib(n int) int {
 }
 func main() {
 	for i := 0; i < 20; i++ {
-		log.Println(i, ":", fib(i), " - ", T(i))
+		fmt.Println(i, ":", fib(i), " - ", T(i))
 	}
 }
 
+// Number os steps
 func T(n int) int {
 	if n <= 1 {
 		return 2

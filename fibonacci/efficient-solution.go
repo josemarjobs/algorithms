@@ -1,6 +1,6 @@
 package main
 
-import "log"
+import "fmt"
 
 func fib(n int) int {
 	f := []int{0, 1}
@@ -11,10 +11,11 @@ func fib(n int) int {
 }
 func main() {
 	for i := 0; i < 50; i++ {
-		log.Println(i, ":", fib(i), " - ", T(i))
+		fmt.Println(i, ":", fib(i), " - ", T(i))
 	}
 }
 
+// Number os steps
 func T(n int) int {
 	return 2*n + 2
 }
